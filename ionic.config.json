@@ -1,0 +1,7 @@
+{
+  "name": "whazzup",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
