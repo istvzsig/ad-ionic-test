@@ -1,0 +1,55 @@
+#main_content {
+    --gradient1: #43C6AC;
+    --gradient2: #F8FFAE;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+
+    h1, h2 {
+        line-height: 1.5;
+        color: #fff;
+    }
+
+    p {
+        line-height: 1.5;
+        // background: var(--gradient1);
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        opacity: .3;
+        font-size: 14px;
+
+    }
+
+    ion-button#open_camera_button {
+        background: transparent;
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin-top: 2rem;
+        // -webkit-border-image-source: webkit-linear-gradient(45deg, #43C6AC, #F8FFAE);
+        animation: pulse 2000ms ease forwards linear;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.2);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+}

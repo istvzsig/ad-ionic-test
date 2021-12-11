@@ -1,0 +1,27 @@
+nav#top_navigation_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    padding-top: 2rem;
+    max-height: 100vh;
+    overflow: hidden;
+
+    h1#logo {
+        background: -webkit-linear-gradient(45deg, #43C6AC, #F8FFAE);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: bolder;
+    }
+
+    #camera_settings_button {
+        margin-top: 12px;
+        margin-right: -1rem;
+        align-self: center;
+    }
+}

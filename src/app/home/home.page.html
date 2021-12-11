@@ -1,20 +1,49 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <!-- TOP BAR   -->
+    <nav id="top_navigation_bar">
+        <h1 id="logo">WHAZZUP</h1>
+        <ion-button color="transparent" (click)="openSideMenu()">
+            <ion-icon id="camera_settings_button" name="settings-outline"></ion-icon>
+        </ion-button>
+    </nav>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <!-- SIDE MENU CAMERA SETTINGS -->
+    <div id="side_menu">
+        <ion-button
+            id="close_side_menu_button"
+            color="transparent"
+            (click)="closeSideMenu()">
+            <ion-icon name="close"></ion-icon>
+        </ion-button>
+
+        <h6>Camera Settings</h6>
+
+        <div id="options_menu">
+            <p class="option_toggler">option1<ion-toggle value="false"></ion-toggle></p>
+            <p class="option_toggler">option1<ion-toggle value="false"></ion-toggle></p>
+            <p class="option_toggler">option1<ion-toggle value="false"></ion-toggle></p>
+            <p class="option_toggler">option1<ion-toggle value="false"></ion-toggle></p>
+        </div>
+    </div>
+
+    <div id="main_content">
+        <h2>Media app</h2>
+        
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore laudantium consequatur deleniti quas reprehenderit molestias, est dolorum doloremque sit vel ullam ratione nobis maxime architecto nisi tempore porro perspiciatis modi numquam asperiores. Hic!</p>
+
+        <ion-button 
+            id="open_camera_button"
+            color="transparent"
+            size="large"
+            (click)="openCamera()">
+            <ion-icon
+                color="black"
+                name="camera-outline">
+            </ion-icon>
+        </ion-button>
+
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <nav id="bottom_navigation_bar"></nav>
 </ion-content>

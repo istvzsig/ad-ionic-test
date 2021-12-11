@@ -1,0 +1,24 @@
+#side_menu {
+    --trance: 300ms ease all;
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    position: fixed;
+    top: 0;
+    left:0;
+    transform: translate3d(100vw, 0, 0);
+    transition: var(--trance);
+    padding-top: 2rem;
+
+    #close_side_menu_button {
+        background: transparent;
+        width: 50px;
+        height: 50px;
+        ion-button {
+            ion-icon { transform: scale(2) }
+        }
+    }
+}
