@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { DomSanitizer } from '@angular/platform-browser';
 
 import { Camera } from '@ionic-native/camera/ngx';
-// import { CameraV2 } from './camerav2';
+
+// services
 
 @Component({
     selector: 'app-home',
@@ -12,8 +13,9 @@ import { Camera } from '@ionic-native/camera/ngx';
 
 export class HomePage {
     constructor(
-        private camera: Camera,
-        private sanitizer: DomSanitizer) {}
+        private camera: Camera
+    ) {}
+        
 
     ngOnInit() {
         // buttons
@@ -25,27 +27,10 @@ export class HomePage {
     }
 
     openSideMenu() {
-        const HIDE = 'show-side-menu';
-        const sideMenu = document.getElementById('side_menu');
-
-        if(sideMenu.classList.contains(HIDE)) {
-            sideMenu.classList.remove(HIDE);
-        } else {
-            sideMenu.classList.add(HIDE);
-        }
+        console.log('asdds');
     }
 
-    closeSideMenu() {
-        const HIDE = 'show-side-menu';
-        const closeButton = document.getElementById('close_side_menu_button');
-        const sideMenu = document.getElementById('side_menu');
-
-        if(sideMenu.classList.contains(HIDE)) {
-            sideMenu.classList.remove(HIDE);
-        } else {
-            sideMenu.classList.add(HIDE);
-        }
-    }
+    
 
     // onSucess(imageData) {
     //     return new Promise(resolve => {
